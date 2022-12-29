@@ -43,7 +43,7 @@ body {
 
 .nft-bg {
     background-color: rgba(0, 255, 247, 0.5);
-    background-image: url(/images/image-equilibrium.jpg);
+    background-image: url(images/image-equilibrium.jpg);
     background-size: contain;
     width: 100%;
     aspect-ratio: 1;
