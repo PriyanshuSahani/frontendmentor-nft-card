@@ -1,0 +1,134 @@
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+:root {
+    --font-blue : rgb(139, 172, 218);
+    --accent-color : rgb(0, 255, 247);
+    --bg-color: hsl(217, 54%, 11%);
+    --board-color: hsl(216, 50%, 16%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+.board {
+    margin: auto;
+    width: min(90%, calc(2.5rem + 300px));
+    background-color: var(--board-color);
+    
+    border-radius: 12px;
+    box-shadow: -1px -1px 21px 8px rgba(0,0,30,0.59);
+-webkit-box-shadow: -1px -1px 21px 8px rgba(0,0,30,0.59);
+-moz-box-shadow: -1px -1px 21px 8px rgba(0,0,30,0.59);
+    padding: 1.25rem;
+
+    position: absolute;
+}
+.board * {
+    color: var(--font-blue);
+    font-weight: 300;
+    
+}
+
+.nft-bg {
+    background-color: rgba(0, 255, 247, 0.5);
+    background-image: url(/images/image-equilibrium.jpg);
+    background-size: contain;
+    width: 100%;
+    aspect-ratio: 1;
+    max-height: 300px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.nft-image {
+    width: 20%;
+    z-index: -1;
+}
+.nft-bg:hover,
+.nft-image:hover {
+    cursor: pointer;
+    background-blend-mode: lighten;
+    /* opacity: 0.5; */
+    z-index: 0;
+}
+
+.nft-name {
+    margin: 1.25rem 0;
+    color: white;
+    font-weight: 600;
+}
+.description {
+    line-height: 1.4rem;
+    margin-bottom: 0.9rem;
+    opacity: 0.8;
+}
+
+.purchase-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start ;
+
+    padding-bottom: 1rem;
+    position: relative;
+}
+.info-left, .info-right {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+}
+.purchase-info img {
+    height: 0.8rem;
+
+}
+.purchase-info span {
+    font-size: 0.8rem;
+}
+
+.price {
+    color: var(--accent-color);
+    font-weight: 400;
+}
+
+.owner-info {
+    display: flex;
+    align-items: center;
+
+    padding-top: 0.9rem;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+.profile-pic {
+    width: 2rem;
+    border-radius: 50%;
+    border: 1px hsl(0, 0%, 80%) solid;
+    margin-right: 0.9rem;
+}
+
+.credit , .owner-name{
+    font-size: 0.8rem;
+    font-weight: 400;
+    opacity: 0.95;
+}
+.owner-name {
+    color: white;
+    font-weight: 400;
+}
+
+
+.active-text:hover {
+    cursor: pointer;
+    color: var(--accent-color);
+}
